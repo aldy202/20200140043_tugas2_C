@@ -19,7 +19,7 @@ namespace _20200140043_tugas2_C
             SqlConnection cn = null;
             try
             {
-                cn = new SqlConnection("data source=MEGANE\\ALDYAHMADFAUZI;database=aldyahmadfauzi;Integrated Security = TRUE");
+                cn = new SqlConnection("data source=MEGANE\\ALDYAHMADFAUZI;database=aldyTugas2;Integrated Security = TRUE");
                 cn.Open();
 
                 SqlCommand cm = new SqlCommand("Insert Into pegawai(Id_pegawai,Nama_pegawai,noHp,jenis_kelamin,alamat)VALUES ('00001','Aldy','087720302716','L','Pekalongan')" +
@@ -54,7 +54,7 @@ namespace _20200140043_tugas2_C
             }catch(Exception e)
             {
                 Console.WriteLine("Gagal menambahkan data " + e);
-                //Console.ReadKey();
+                Console.ReadKey();
             }
             finally
             {
