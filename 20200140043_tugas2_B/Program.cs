@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace _20200140043_tugas2_B
+namespace _20200140043_tugas2_C
+
 {
     class Program
     {
